@@ -1,0 +1,22 @@
+{
+  "name": "zinc-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lnatu/zinc-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lnatu/zinc-template/issues"
+  },
+  "homepage": "https://github.com/lnatu/zinc-template#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}

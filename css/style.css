@@ -5,6 +5,7 @@
 .zinc-atom {
   height: 100vh;
   background-color: #343a40;
+  overflow: hidden;
 }
 
 .zinc-atom__inner {
@@ -29,8 +30,8 @@
 
 .atom-orbit {
   position: absolute;
-  width: 500px;
-  height: 500px;
+  width: 70%;
+  height: 70%;
   transform-style: preserve-3d;
   border: 4px solid transparent;
 }
@@ -100,13 +101,13 @@
 
 .atom-orbit--1 .atom-text--top {
   left: 50%;
-  top: -70px;
+  top: -15%;
   transform: translateX(-50%);
 }
 
 .atom-orbit--1 .atom-text--bottom {
   left: 50%;
-  bottom: -70px;
+  bottom: -15%;
   transform: translateX(-50%);
 }
 
@@ -116,13 +117,13 @@
 
 .atom-orbit--2 .atom-text--top {
   left: 50%;
-  top: -70px;
+  top: -15%;
   transform: translateX(-50%);
 }
 
 .atom-orbit--2 .atom-text--bottom {
   left: 50%;
-  bottom: -70px;
+  bottom: -15%;
   transform: translateX(-50%);
 }
 
@@ -132,13 +133,13 @@
 
 .atom-orbit--3 .atom-text--top {
   left: 50%;
-  top: -70px;
+  top: -15%;
   transform: translateX(-50%);
 }
 
 .atom-orbit--3 .atom-text--bottom {
   left: 50%;
-  bottom: -70px;
+  bottom: -15%;
   transform: translateX(-50%);
 }
 
@@ -153,8 +154,8 @@
   height: 24px;
   border-radius: 50%;
   position: absolute;
-  top: 250px;
-  left: 250px;
+  top: 245px;
+  left: 245px;
   margin-top: -15px;
   margin-left: -15px;
 }
@@ -167,10 +168,50 @@
 
 @keyframes rotate-right {
   from {
-    transform: rotate(0deg) translate(-250px) rotate(0deg);
+    transform: rotate(0deg) translate(-50%) rotate(0deg);
   }
 
   to {
-    transform: rotate(360deg) translate(-250px) rotate(-360deg);
+    transform: rotate(360deg) translate(-50%) rotate(-360deg);
+  }
+}
+
+@media (max-width: 992px) {
+  .zinc-atom__inner {
+    height: 500px;
+    width: 500px;
+  }
+
+  .atom-electron::before {
+    top: 175px;
+    left: 175px;
+  }
+}
+
+@media (max-width: 768px) {
+  .atom-text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .zinc-atom__inner {
+    height: 300px;
+    width: 300px;
+  }
+
+  .atom-electron::before {
+    top: 105px;
+    left: 105px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .atom-text {
+    font-size: 13px;
+  }
+
+  .nucleus {
+    font-size: 10px;
   }
 }

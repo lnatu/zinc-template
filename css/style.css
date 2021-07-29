@@ -1,5 +1,9 @@
+.text-right {
+  text-align: right;
+}
+
 .zinc-atom {
-  height: 100vh;
+  height: calc(100vh - 127px);
   background-color: #343a40;
   overflow: hidden;
 }
@@ -275,4 +279,53 @@
 
 .header-nav nav.navbar-light a.nav-link.active {
   color: #ffd700;
+}
+
+.section-paper {
+  height: 40vh;
+  background-image: url(../assets/paper.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: shorelines;
+}
+
+.paper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 100px;
+}
+
+.question-list li {
+  font-size: 40px;
+}
+
+.question-list li + li {
+  margin-top: 25px;
+}
+
+.question-list li a {
+  color: #000;
+  text-decoration: none;
+}
+
+@media (max-width: 992px) {
+  .paper {
+    padding: 0 50px;
+  }
+
+  .question-list li {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .paper {
+    padding: 0 20px;
+  }
+
+  .question-list li {
+    font-size: 20px;
+  }
 }
